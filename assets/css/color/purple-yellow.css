@@ -20,6 +20,10 @@ a:hover, a:focus,
 	color: #8566b5; 
 }
 
+.custom-color-text {
+	color: #8566b5;
+}
+
 .bg-primary,
 .btn-primary,
 .progress-bar-primary,
