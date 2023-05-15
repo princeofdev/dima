@@ -10,6 +10,9 @@ Author:			Suelo
 -------------------------------------------------------------------------------- */
 
 /* Primary */
+.custom-color-text {
+	color: #3aa8db;
+}
 
 a:hover, a:focus, 
 .text-primary, 
