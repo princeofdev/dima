@@ -72,7 +72,8 @@ var Mi = {
             // Images 
             $('.bg-image').each(function(){
                 var src = $(this).children('img').attr('src');
-                $(this).css('background-image','url('+src+')').children('img').hide();
+                if(src)
+                    $(this).css('background-image','url('+src+')').children('img').hide();
             });
 
             // Slideshow 
