@@ -32,7 +32,6 @@ var Mi = {
             self.backgrounds();
             self.scroller();
             self.masonry();
-            // self.ajaxLoader();
             self.mobileNav();
 
         },
@@ -194,57 +193,6 @@ var Mi = {
             $grid.on('layoutComplete', Waypoint.refreshAll());
 
         },
-        // ajaxLoader: function() {
-
-        //     var toLoad;
-        //     var offsetTop;
-
-        //     var $ajaxLoader = $('#ajax-loader');
-        //     var $ajaxModal = $('#ajax-modal');
-        //     var isAjaxModal = false;
-
-        //     function showNewContent() {
-        //         $ajaxModal.fadeIn(200, function(){
-        //             $('html').addClass('locked-scrolling');
-        //         });
-        //     }
-            
-        //     function loadContent() {　
-        //        $ajaxModal.load(toLoad);
-        // 　  }
-            
-        //     $('[data-target="ajax-modal"]').on('click', function() {
-        //         isAjaxModal = true;
-        //         offsetTop = $(document).scrollTop();
-        //         toLoad = $(this).attr('href');　
-        //         loadContent();
-        //         $('body').addClass('ajax-modal-opened');
-        //         return false; 
-        //     });
-
-        //     $(document).ajaxStart(function() {
-        //         if(isAjaxModal) $ajaxLoader.fadeIn(200);
-        //     });
-        //     $(document).ajaxStop(function() {
-        //         if(isAjaxModal) $ajaxLoader.fadeOut(200, function(){
-        //             showNewContent();
-        //         });
-        //     });
-
-        //     function closeDetails() {
-        //         isAjaxModal = false;
-        //         $('html').removeClass('locked-scrolling');
-        //         $('body').removeClass('ajax-modal-opened');
-        //         $(document).scrollTop(offsetTop)
-        //         $ajaxModal.fadeOut(200).scrollTop(0);
-        //     }
-
-        //     $ajaxModal.delegate('*[data-dismiss="close"]','click', function(){
-        //         closeDetails();
-        //         return false;
-        //     });
-
-        // },
         mobileNav: function() {
             $('[data-target="mobile-nav"]').on('click', function(){
                 $('body').toggleClass('mobile-nav-open');
